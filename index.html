@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title> Self Introduction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+ 
+h1, h2 { 
+			   text-align: center; 
+               font-family: Garamond, serif;
+			   
+             }
+
+
+h3        {
+              text-align: center;
+              margin-bottom: 100px;
+              font-family:'Lucida Grande', monospace;
+            }      
+
+body 
+{
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA0L3JtNDUyLWYtMDE0LWJhY2tncm91bmRoLmpwZw.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+<br>
+
+<!-- Image -->
+
+<div class="w3-content w3-section" style="max-width:500px">
+
+  <img class="mySlides w3-animate-fading" src="C:\Users\Alessandra Nicole\Pictures\Formal.jpg" style="width:100%" alt="Formal">
+  <img class="mySlides w3-animate-fading" src="C:\Users\Alessandra Nicole\Pictures\toga.jpg" style="width:100%" alt= "toga">
+  
+</div>
+
+<pre><br>
+<h2><b>Personal Information:</b></h2>
+<h3>
+<b>Fullname:</b> Alessandra Nicole L. Aquino
+<b>Birthday:</b> November 8, 2002
+<b>Age:</b> 20
+<b>Address:</b> #12 Ilaya Street, Alabang, Muntinlupa City
+<b>Hobbies:</b> Watching K-dramas, Listening to Music,
+Singing and playing Volleyball/Badminton.
+<b>Bible Verse:</b> 1 Peter 4:8 
+ 
+<h2><b>Academic Information:</b></h2>
+<h3><b>Student Number:</b> 21138517
+<b>Course:</b> Associate in Computer Technology - Graduate
+Bachelor in Information Technology - Curently Taking</h3>
+		 
+</pre>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
+</body>
+</html>
